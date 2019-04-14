@@ -38,8 +38,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.send(err.message || "Something Went wrong");
 });
-app.listen(3004, function() {
-  console.log("restex-mongod-demo listening on 3002");
+app.listen(3000, function() {
+  console.log("restex-mongod-demo listening on 3000");
 });
 process.on('unhandledRejection',function(err){
     console.log('err',err)
